@@ -17,8 +17,7 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 # Bot token from environment variables for security
-BOT_TOKEN = os.environ.get("7450474840:AAGU-qhoDcbDZWwvEgGGsXN2E__DSIMF3iM")
-
+BOT_TOKEN = os.environ.get("BOT_TOKEN", "7450474840:AAGU-qhoDcbDZWwvEgGGsXN2E__DSIMF3iM")
 # Directory for downloaded files
 DOWNLOADS_DIR = "downloads"
 os.makedirs(DOWNLOADS_DIR, exist_ok=True)
